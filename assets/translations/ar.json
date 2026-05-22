@@ -1,0 +1,53 @@
+{
+    "app_name": "GitrusGuard AI",
+    "bottom_nav": {
+        "settings": "الإعدادات",
+        "stats": "الإحصائيات",
+        "gis_map": "خريطة GIS",
+        "scan": "الفحص",
+        "home": "الرئيسية"
+    },
+    "home": {
+        "greeting": "مرحبا،",
+        "user_name": "أحمد سعيد",
+        "status_alert_title": "تحذير: HLB — خطر صحي نشط",
+        "status_alert_subtitle": "تم رصد 3 حالات على بعد 4 كم - محافظة البحيرة",
+        "scan_prompt_title": "افحص الورقة أو الثمرة الآن",
+        "scan_prompt_meta": "18 • MobileNetV2 • دقة 93% • مرضية",
+        "disease_prediction_title": "التنبؤ بالأمراض",
+        "disease_prediction_subtitle": "خطر عالٍ غداً",
+        "disease_map_title": "خريطة الأمراض",
+        "disease_map_subtitle": "5 حالات قريبة",
+        "scan_log_title": "سجل الفحوصات",
+        "scan_log_subtitle": "12 فحص هذا الأسبوع",
+        "export_title": "توافق التصدير",
+        "export_subtitle": "EU MRL الحدود الآمنة",
+        "live_field_activity": "مباشر: نشاط الحقل",
+        "view_details": "عرض التفاصيل"
+    },
+    "settings": {
+        "title": "الإعدادات",
+        "subtitle": "اختر لغة التطبيق المفضلة وسيتم حفظها تلقائياً.",
+        "language_section_title": "اللغة",
+        "language_description": "التبديل بين العربية والإنجليزية. يتغير اتجاه الواجهة فوراً.",
+        "arabic": "العربية",
+        "english": "الإنجليزية",
+        "rtl_label": "RTL",
+        "ltr_label": "LTR",
+        "auto_saved": "يتم حفظ اللغة المختارة تلقائياً واستعادتها عند تشغيل التطبيق مرة أخرى."
+    },
+    "pages": {
+        "stats": {
+            "title": "الإحصائيات",
+            "subtitle": "تابع الاكتشافات وأنماط المخاطر واتجاهات الأداء الأسبوعية."
+        },
+        "gis_map": {
+            "title": "خريطة GIS",
+            "subtitle": "عرض نشاط الحقل القريب وتجميعات المرض على الخريطة."
+        },
+        "scan": {
+            "title": "الفحص",
+            "subtitle": "التقط صورة لورقة أو ثمرة وابدأ جلسة فحص جديدة."
+        }
+    }
+}

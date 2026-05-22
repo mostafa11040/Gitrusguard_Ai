@@ -1,0 +1,53 @@
+{
+    "app_name": "GitrusGuard AI",
+    "bottom_nav": {
+        "settings": "Settings",
+        "stats": "Stats",
+        "gis_map": "GIS Map",
+        "scan": "Scan",
+        "home": "Home"
+    },
+    "home": {
+        "greeting": "Hello,",
+        "user_name": "Ahmed Saeed",
+        "status_alert_title": "Warning: HLB — active health threat",
+        "status_alert_subtitle": "3 cases detected within 4 km - Beheira Governorate",
+        "scan_prompt_title": "Scan the leaf or fruit now",
+        "scan_prompt_meta": "18 • MobileNetV2 • 93% accuracy • Healthy",
+        "disease_prediction_title": "Disease prediction",
+        "disease_prediction_subtitle": "High risk tomorrow",
+        "disease_map_title": "Disease map",
+        "disease_map_subtitle": "5 nearby cases",
+        "scan_log_title": "Scan history",
+        "scan_log_subtitle": "12 scans this week",
+        "export_title": "Export compliance",
+        "export_subtitle": "EU MRL safe limits",
+        "live_field_activity": "Live: field activity",
+        "view_details": "View details"
+    },
+    "settings": {
+        "title": "Settings",
+        "subtitle": "Choose your preferred app language and keep it saved automatically.",
+        "language_section_title": "Language",
+        "language_description": "Switch between Arabic and English. The layout direction updates instantly.",
+        "arabic": "Arabic",
+        "english": "English",
+        "rtl_label": "RTL",
+        "ltr_label": "LTR",
+        "auto_saved": "Your selected language is saved automatically and restored on the next launch."
+    },
+    "pages": {
+        "stats": {
+            "title": "Stats",
+            "subtitle": "Track detections, risk patterns, and weekly performance trends."
+        },
+        "gis_map": {
+            "title": "GIS Map",
+            "subtitle": "View nearby field activity and map-based disease clustering."
+        },
+        "scan": {
+            "title": "Scan",
+            "subtitle": "Capture a leaf or fruit image and run a new inspection session."
+        }
+    }
+}
