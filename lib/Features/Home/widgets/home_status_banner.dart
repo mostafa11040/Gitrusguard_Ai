@@ -38,28 +38,30 @@ class HomeStatusBanner extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 14),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  LocaleKeys.homeStatusAlertTitle.tr(),
-                  textAlign: TextAlign.right,
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: const Color(0xFFFFC9C9),
-                    fontWeight: FontWeight.w800,
-                    height: 1.15,
+            Flexible(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    LocaleKeys.homeStatusAlertTitle.tr(),
+                    textAlign: TextAlign.start,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      color: const Color(0xFFFFC9C9),
+                      fontWeight: FontWeight.w800,
+                      height: 1.15,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  LocaleKeys.homeStatusAlertSubtitle.tr(),
-                  textAlign: TextAlign.right,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: const Color(0xFFF6D7D7).withValues(alpha: 0.92),
-                    height: 1.45,
+                  const SizedBox(height: 8),
+                  Text(
+                    LocaleKeys.homeStatusAlertSubtitle.tr(),
+                    textAlign: TextAlign.start,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: const Color(0xFFF6D7D7).withValues(alpha: 0.92),
+                      height: 1.45,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),

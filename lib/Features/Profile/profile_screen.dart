@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:gitrusguard_ai/Features/Common/feature_placeholder_screen.dart';
-import 'package:gitrusguard_ai/core/localization/locale_keys.dart';
+import 'widgets/profile_recent_logs.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -9,28 +8,41 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Align(
-          alignment: Alignment.center,
-          child: Column(
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(20)),
-                child: Image.asset(
-                  'assets/images/profile.png',
-                  fit: BoxFit.cover,
-                  width: 200,
-                  height: 200,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SafeArea(
+          child: Align(
+            alignment: Alignment.center,
+            child: Column(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  child: Image.asset(
+                    'assets/images/profile.png',
+                    fit: BoxFit.cover,
+                    width: 200,
+                    height: 200,
+                  ),
                 ),
-              ),
 
-              Text(
-                "مصطفي علي",
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
+                Text(
+                  "مصطفي علي",
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                ),
 
-              Row(),
-            ],
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.location_on, size: 16),
+                    SizedBox(width: 8),
+                    Text("شقرف - طنطا", style: TextStyle(fontSize: 18)),
+                  ],
+                ),
+
+                const SizedBox(height: 24),
+                const ProfileRecentLogs(),
+              ],
+            ),
           ),
         ),
       ),
