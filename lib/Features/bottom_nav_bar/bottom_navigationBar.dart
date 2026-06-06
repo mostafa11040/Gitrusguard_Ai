@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gitrusguard_ai/Features/Home/home_screen.dart';
 import 'package:gitrusguard_ai/Features/Map/gis_map_screen.dart';
-import 'package:gitrusguard_ai/Features/Scan/scan_screen.dart';
+import 'package:gitrusguard_ai/Features/Details/details_screen.dart';
+import 'package:gitrusguard_ai/Features/Scan/ScanScreen.dart';
 import 'package:gitrusguard_ai/Features/Settings/settings_screen.dart';
 import 'package:gitrusguard_ai/Features/Stats/stats_screen.dart';
 import 'package:gitrusguard_ai/core/localization/locale_keys.dart';
@@ -60,7 +61,7 @@ class _BottomNavigationBarShellState extends State<BottomNavigationBarShell> {
     const SettingsScreen(),
     const StatsScreen(),
     const GisMapScreen(),
-    const ScanScreen(),
+    const Scanscreen(),
     const HomeScreen(),
   ];
 

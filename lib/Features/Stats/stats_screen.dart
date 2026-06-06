@@ -9,9 +9,9 @@ class StatsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const FeaturePlaceholderScreen(
-      titleKey: LocaleKeys.statsTitle,
-      subtitleKey: LocaleKeys.statsSubtitle,
-      icon: Icons.bar_chart_rounded,
+      titleKey: LocaleKeys.scanTitle,
+      subtitleKey: LocaleKeys.scanSubtitle,
+      icon: Icons.qr_code_scanner,
       accentColor: Color(0xFF95D4B3),
     );
   }

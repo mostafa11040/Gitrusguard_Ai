@@ -66,5 +66,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- Camera and Photo Library usage descriptions required by iOS -->
+	<key>NSCameraUsageDescription</key>
+	<string>التطبيق يحتاج صلاحية استخدام الكاميرا لالتقاط الصور</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>التطبيق يحتاج صلاحية الوصول لمعرض الصور لاختيار أو حفظ الصور</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>التطبيق يحتاج صلاحية حفظ الصور إلى المعرض</string>
 </dict>
 </plist>
