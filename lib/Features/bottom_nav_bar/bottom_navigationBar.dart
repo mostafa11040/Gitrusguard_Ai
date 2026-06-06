@@ -5,10 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gitrusguard_ai/Features/Home/home_screen.dart';
 import 'package:gitrusguard_ai/Features/Map/gis_map_screen.dart';
-import 'package:gitrusguard_ai/Features/Details/details_screen.dart';
 import 'package:gitrusguard_ai/Features/Scan/ScanScreen.dart';
 import 'package:gitrusguard_ai/Features/Settings/settings_screen.dart';
-import 'package:gitrusguard_ai/Features/Stats/stats_screen.dart';
+import 'package:gitrusguard_ai/Features/Profile/profile_screen.dart';
 import 'package:gitrusguard_ai/core/localization/locale_keys.dart';
 
 class BottomNavigationBarShell extends StatefulWidget {
@@ -33,9 +32,9 @@ class _BottomNavigationBarShellState extends State<BottomNavigationBarShell> {
     ),
     _BottomNavDestination(
       index: 1,
-      labelKey: LocaleKeys.navStats,
-      icon: Icons.bar_chart_rounded,
-      selectedIcon: Icons.bar_chart,
+      labelKey: LocaleKeys.ProfileTitle,
+      icon: Icons.person_outline_rounded,
+      selectedIcon: Icons.person_rounded,
     ),
     _BottomNavDestination(
       index: 2,
@@ -59,7 +58,7 @@ class _BottomNavigationBarShellState extends State<BottomNavigationBarShell> {
 
   late final List<Widget> _pages = <Widget>[
     const SettingsScreen(),
-    const StatsScreen(),
+    const ProfileScreen(),
     const GisMapScreen(),
     const Scanscreen(),
     const HomeScreen(),

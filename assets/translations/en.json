@@ -37,8 +37,8 @@
         "auto_saved": "Your selected language is saved automatically and restored on the next launch."
     },
     "pages": {
-        "stats": {
-            "title": "Stats",
+        "profile": {
+            "title": "Profile",
             "subtitle": "Track detections, risk patterns, and weekly performance trends."
         },
         "gis_map": {

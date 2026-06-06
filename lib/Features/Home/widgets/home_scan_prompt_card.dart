@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:gitrusguard_ai/Features/Details/details_screen.dart';
 import 'package:image_picker/image_picker.dart';
 
 import 'home_section_frame.dart';
@@ -33,6 +34,14 @@ class _HomeScanPromptCardState extends State<HomeScanPromptCard> {
         setState(() {
           _imageFile = File(pickedFile.path); // تحويل الـ XFile إلى File عادي
         });
+        if (mounted) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DetailsScreen(imageFile: _imageFile!),
+            ),
+          );
+        }
       }
     } catch (e) {
       print("حدث خطأ أثناء فتح الكاميرا: $e");
@@ -72,7 +81,7 @@ class _HomeScanPromptCardState extends State<HomeScanPromptCard> {
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       LocaleKeys.homeScanPromptTitle.tr(),

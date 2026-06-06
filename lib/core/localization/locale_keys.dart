@@ -4,7 +4,7 @@ class LocaleKeys {
   static const appName = 'app_name';
 
   static const navSettings = 'bottom_nav.settings';
-  static const navStats = 'bottom_nav.stats';
+  static const navProfile = 'bottom_nav.profile';
   static const navGisMap = 'bottom_nav.gis_map';
   static const navScan = 'bottom_nav.scan';
   static const navHome = 'bottom_nav.home';
@@ -37,8 +37,8 @@ class LocaleKeys {
   static const settingsLtrLabel = 'settings.ltr_label';
   static const settingsAutoSaved = 'settings.auto_saved';
 
-  static const statsTitle = 'pages.stats.title';
-  static const statsSubtitle = 'pages.stats.subtitle';
+  static const ProfileTitle = 'pages.profile.title';
+  static const ProfileSubtitle = 'pages.profile.subtitle';
   static const gisMapTitle = 'pages.gis_map.title';
   static const gisMapSubtitle = 'pages.gis_map.subtitle';
   static const scanTitle = 'pages.scan.title';
