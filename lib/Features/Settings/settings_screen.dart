@@ -1,6 +1,9 @@
+import 'dart:ui' as ui;
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
+import 'package:gitrusguard_ai/Features/Auth/login_screen.dart';
 import 'package:gitrusguard_ai/core/localization/locale_keys.dart';
 import 'package:gitrusguard_ai/core/localization/localization_helper.dart';
 
@@ -40,6 +43,40 @@ class SettingsScreen extends StatelessWidget {
                 _LanguageSection(isArabic: isArabic),
                 const SizedBox(height: 18),
                 const _InfoCard(),
+                const SizedBox(height: 22),
+                _SettingsTile(
+                  title: LocaleKeys.settingsMyNotifications.tr(),
+                  icon: Icons.notifications_none_rounded,
+                  iconColor: const Color(0xFF95D4B3),
+                  onTap: () {},
+                ),
+                _SettingsTile(
+                  title: LocaleKeys.settingsSavedTreatments.tr(),
+                  icon: Icons.bookmark_border_rounded,
+                  iconColor: const Color(0xFFFFB84D),
+                  onTap: () {},
+                ),
+                _SettingsTile(
+                  title: LocaleKeys.settingsFollowedExperts.tr(),
+                  icon: Icons.people_outline_rounded,
+                  iconColor: const Color(0xFFBFC9C1),
+                  onTap: () {},
+                ),
+                _SettingsTile(
+                  title: LocaleKeys.settingsLogout.tr(),
+                  icon: Icons.logout_rounded,
+                  iconColor: const Color(0xFFFFA4A4),
+                  isDestructive: true,
+                  onTap: () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginScreen(),
+                      ),
+                      (route) => false,
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -233,6 +270,76 @@ class _InfoCard extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SettingsTile extends StatelessWidget {
+  const _SettingsTile({
+    required this.title,
+    required this.icon,
+    required this.iconColor,
+    required this.onTap,
+    this.isDestructive = false,
+  });
+
+  final String title;
+  final IconData icon;
+  final Color iconColor;
+  final VoidCallback onTap;
+  final bool isDestructive;
+
+  @override
+  Widget build(BuildContext context) {
+    final isRtl = Directionality.of(context) == ui.TextDirection.rtl;
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: const Color(0xFF171A18),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.06),
+          width: 1,
+        ),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(16),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+            child: Row(
+              children: [
+                Icon(
+                  icon,
+                  color: iconColor,
+                  size: 22,
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      color: isDestructive ? const Color(0xFFFFA4A4) : Colors.white,
+                      fontSize: 15.5,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                Icon(
+                  isRtl ? Icons.chevron_left_rounded : Icons.chevron_right_rounded,
+                  color: isDestructive
+                      ? const Color(0xFFFFA4A4).withValues(alpha: 0.6)
+                      : Colors.white.withValues(alpha: 0.3),
+                  size: 22,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

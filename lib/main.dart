@@ -3,7 +3,7 @@ import 'dart:ui' as ui;
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import 'package:gitrusguard_ai/Features/bottom_nav_bar/bottom_navigationBar.dart';
+import 'package:gitrusguard_ai/Features/Auth/login_screen.dart';
 import 'package:gitrusguard_ai/core/localization/localization_helper.dart';
 
 Future<void> main() async {
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
           child: child ?? const SizedBox.shrink(),
         );
       },
-      home: const BottomNavigationBarShell(),
+      home: const LoginScreen(),
     );
   }
 }

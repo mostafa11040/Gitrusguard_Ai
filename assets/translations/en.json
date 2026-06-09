@@ -34,7 +34,11 @@
         "english": "English",
         "rtl_label": "RTL",
         "ltr_label": "LTR",
-        "auto_saved": "Your selected language is saved automatically and restored on the next launch."
+        "auto_saved": "Your selected language is saved automatically and restored on the next launch.",
+        "my_notifications": "My Notifications",
+        "saved_treatments": "Saved Treatments",
+        "followed_experts": "Experts I Follow",
+        "logout": "Logout"
     },
     "pages": {
         "profile": {
@@ -49,5 +53,28 @@
             "title": "Scan",
             "subtitle": "Capture a leaf or fruit image and run a new inspection session."
         }
+    },
+    "auth": {
+        "signup_title": "Create New Account",
+        "signup_subtitle": "Join the future of smart citrus farm management",
+        "signin_title": "Sign In",
+        "signin_subtitle": "Sign in to continue managing smart citrus farms",
+        "full_name": "Full Name",
+        "full_name_hint": "Enter your full name",
+        "email": "Email Address",
+        "email_hint": "example@citrusguard.ai",
+        "phone": "Phone Number",
+        "phone_hint": "+966 50 000 0000",
+        "password": "Password",
+        "password_hint": "••••••••",
+        "signup_btn": "Sign Up",
+        "signin_btn": "Sign In",
+        "or_via": "Or via",
+        "google": "Google",
+        "apple": "Apple",
+        "has_account": "Already have an account? ",
+        "no_account": "Don't have an account? ",
+        "login_link": "Sign In",
+        "signup_link": "Sign Up"
     }
 }

@@ -34,7 +34,11 @@
         "english": "الإنجليزية",
         "rtl_label": "RTL",
         "ltr_label": "LTR",
-        "auto_saved": "يتم حفظ اللغة المختارة تلقائياً واستعادتها عند تشغيل التطبيق مرة أخرى."
+        "auto_saved": "يتم حفظ اللغة المختارة تلقائياً واستعادتها عند تشغيل التطبيق مرة أخرى.",
+        "my_notifications": "تنبيهاتي",
+        "saved_treatments": "العلاجات المحفوظة",
+        "followed_experts": "خبراء أتابعهم",
+        "logout": "تسجيل الخروج"
     },
     "pages": {
         "profile": {
@@ -49,5 +53,28 @@
             "title": "الفحص",
             "subtitle": "التقط صورة لورقة أو ثمرة وابدأ جلسة فحص جديدة."
         }
+    },
+    "auth": {
+        "signup_title": "إنشاء حساب جديد",
+        "signup_subtitle": "انضم إلى مستقبل إدارة مزارع الحمضيات الذكية",
+        "signin_title": "تسجيل الدخول",
+        "signin_subtitle": "سجل الدخول لمتابعة إدارة مزارع الحمضيات الذكية",
+        "full_name": "الاسم الكامل",
+        "full_name_hint": "أدخل اسمك بالكامل",
+        "email": "البريد الإلكتروني",
+        "email_hint": "example@citrusguard.ai",
+        "phone": "رقم الهاتف",
+        "phone_hint": "+966 50 000 0000",
+        "password": "كلمة المرور",
+        "password_hint": "••••••••",
+        "signup_btn": "إنشاء حساب",
+        "signin_btn": "تسجيل الدخول",
+        "or_via": "أو عبر",
+        "google": "جوجل",
+        "apple": "آبل",
+        "has_account": "لديك حساب بالفعل؟ ",
+        "no_account": "ليس لديك حساب؟ ",
+        "login_link": "تسجيل الدخول",
+        "signup_link": "إنشاء حساب جديد"
     }
 }

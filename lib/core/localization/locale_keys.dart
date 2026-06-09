@@ -36,6 +36,10 @@ class LocaleKeys {
   static const settingsRtlLabel = 'settings.rtl_label';
   static const settingsLtrLabel = 'settings.ltr_label';
   static const settingsAutoSaved = 'settings.auto_saved';
+  static const settingsMyNotifications = 'settings.my_notifications';
+  static const settingsSavedTreatments = 'settings.saved_treatments';
+  static const settingsFollowedExperts = 'settings.followed_experts';
+  static const settingsLogout = 'settings.logout';
 
   static const ProfileTitle = 'pages.profile.title';
   static const ProfileSubtitle = 'pages.profile.subtitle';
@@ -43,4 +47,27 @@ class LocaleKeys {
   static const gisMapSubtitle = 'pages.gis_map.subtitle';
   static const scanTitle = 'pages.scan.title';
   static const scanSubtitle = 'pages.scan.subtitle';
+
+  // Auth Keys
+  static const authSignUpTitle = 'auth.signup_title';
+  static const authSignUpSubtitle = 'auth.signup_subtitle';
+  static const authSignInTitle = 'auth.signin_title';
+  static const authSignInSubtitle = 'auth.signin_subtitle';
+  static const authFullName = 'auth.full_name';
+  static const authFullNameHint = 'auth.full_name_hint';
+  static const authEmail = 'auth.email';
+  static const authEmailHint = 'auth.email_hint';
+  static const authPhone = 'auth.phone';
+  static const authPhoneHint = 'auth.phone_hint';
+  static const authPassword = 'auth.password';
+  static const authPasswordHint = 'auth.password_hint';
+  static const authSignUpBtn = 'auth.signup_btn';
+  static const authSignInBtn = 'auth.signin_btn';
+  static const authOrVia = 'auth.or_via';
+  static const authGoogle = 'auth.google';
+  static const authApple = 'auth.apple';
+  static const authHasAccount = 'auth.has_account';
+  static const authNoAccount = 'auth.no_account';
+  static const authLoginLink = 'auth.login_link';
+  static const authSignUpLink = 'auth.signup_link';
 }
